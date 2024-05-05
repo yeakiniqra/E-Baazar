@@ -21,15 +21,15 @@ def signin(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
 
-        # Check if the login credentials belong to a regular user
+        
         user = authenticate(request, username=username, password=password)
         if user is not None:
             auth_login(request, user)
             messages.success(request, 'You have successfully logged in!')
-            return redirect('home')  # Redirect to the booking page
+            return redirect('home')  
          
         else:
-            # Authentication failed, display an error message
+            
             messages.error(request, 'Invalid username or password.')
             return redirect('signin')
     return render(request, 'signin.html')
@@ -40,22 +40,22 @@ def signup(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
 
-        # Create user
+        
         user = User.objects.create_user(username=username, email=email, password=password)
 
-        # Store sign-up values in session
+        
         request.session['signup_username'] = username
         request.session['signup_email'] = email
         request.session['signup_password'] = password
 
-        # Authenticate user
+        
         user = authenticate(request, username=username, password=password)
         
         if user is not None:
-            # Login user
+            
             auth_login(request, user)
             messages.success(request, 'You have successfully signed up!')
-            return redirect('signin')  # Redirect to the user page
+            return redirect('signin')  
 
     return render(request, 'signup.html')
 
@@ -88,10 +88,10 @@ def add_to_cart(request, product_id):
     cart_item, created = Cart.objects.get_or_create(user=request.user, product=product)
     
     if not created:
-        # If the cart item already exists, increment the quantity
+        
         cart_item.quantity += 1
     else:
-        # If the cart item is newly created, set the quantity to 1
+        
         cart_item.quantity = 1
     
     cart_item.save()
@@ -131,14 +131,14 @@ def proceed_to_checkout(request):
             item.product.stock -= item.quantity
             item.product.save()
         else:
-            # Handle out of stock scenario (e.g., show error message or remove item from cart)
+            
             # You can add your custom logic here
             pass
     
-    # Create an order record for the checkout process (optional)
+    
     order = Order.objects.create(user=request.user, product=item.product, quantity=item.quantity, total_price=item.product.price * item.quantity)
     
-    # Clear the user's cart after proceeding to checkout
+    
     cart_items.delete()
     
     return redirect('checkout') 
@@ -150,12 +150,12 @@ def checkout(request):
 
 @login_required
 def pay_now(request):
-    # Retrieve the user and relevant order details
+    
     user = request.user
-    order_items = Order.objects.filter(user=user)  # Fetch orders associated with the current user
+    order_items = Order.objects.filter(user=user)  
     total_amount = sum(item.product.price * item.quantity for item in order_items)
 
-    # Prepare the email content using the email template
+    
     subject = 'Order Confirmation'
     email_template_name = 'confirmationemail.html'
     context = {
@@ -165,7 +165,7 @@ def pay_now(request):
     }
     email_content = render_to_string(email_template_name, context)
 
-    # Send the email
+    
     send_mail(
         subject,
         '',
@@ -174,7 +174,7 @@ def pay_now(request):
         html_message=email_content
     )
 
-    # Redirect or return a response after sending the email
+    
     return redirect('orderconfirm')
 
 
