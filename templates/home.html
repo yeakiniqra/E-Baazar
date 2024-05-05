@@ -1,0 +1,384 @@
+{% extends "base.html" %}
+{% block title %}
+E-BAAZAR
+{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+</head>
+<body>
+    {% block content %}
+    <section class="relative bg-cover bg-center bg-no-repeat" style="background-image: url('https://i.postimg.cc/PrjbrS3y/shopping-trolleys-packets-tags.jpg');" >
+      <div class="absolute inset-0 bg-black opacity-75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+  
+      <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8 lg:justify-center" style="font-family: 'Poppins', sans-serif; font-optical-sizing: auto;">
+        <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+            <h1 class="text-4xl font-extrabold sm:text-5xl text-gray-200">
+                Let us find your
+                <strong class="block font-extrabold text-teal-400"> 
+                    Favorite Products
+                </strong>
+            </h1>
+    
+            <div class="mt-8 flex flex-wrap gap-4 justify-center text-center">
+              <a
+                  href="{% url 'products' %}"
+                  class="block w-full rounded bg-gray-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-teal-900 focus:outline-none focus:ring active:bg-teal-500 sm:w-auto"
+              >
+                  Get Started
+              </a>
+          
+              <a
+                  href="#"
+                  class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+              >
+                  Learn More
+              </a>
+          </div>
+        </div>
+    </div>
+  </section>
+
+        <!-- Categories  -->
+
+        <!-- component -->
+<div class="flex justify-center items-center mt-12">
+    <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
+    <div class="2xl:mx-auto 2xl:container py-12 px-4 sm:px-6 xl:px-20 2xl:px-0 w-full">
+      <div class="flex flex-col jusitfy-center items-center space-y-10">
+        <div class="flex flex-col justify-center items-center ">
+          <h1 class="text-3xl xl:text-4xl font-semibold leading-7 xl:leading-9 text-gray-800" style="font-family: 'Poppins', sans-serif; font-optical-sizing: auto;">Shop By Category</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 md:gap-x-8 w-full">
+          <div class="relative group flex justify-center items-center h-full w-full">
+            <img class="object-center object-cover h-full w-full" src="https://i.ibb.co/ThPFmzv/omid-armin-m-VSb6-PFk-VXw-unsplash-1-1.png" alt="girl-image" />
+            <button class="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">Women</button>
+            <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
+          </div>
+  
+          <div class="flex flex-col space-y-4 md:space-y-8 mt-4 md:mt-0">
+            <div class="relative group flex justify-center items-center h-full w-full">
+              <img class="object-center object-cover h-full w-full" src="https://i.ibb.co/SXZvYHs/irene-kredenets-DDqx-X0-7v-KE-unsplash-1.png" alt="shoe-image" />
+              <button class="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">Shoes</button>
+              <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
+            </div>
+            <div class="relative group flex justify-center items-center h-full w-full">
+              <img class="object-center object-cover h-full w-full" src="https://i.ibb.co/Hd1pVxW/louis-mornaud-Ju-6-TPKXd-Bs-unsplash-1-2.png" alt="watch-image" />
+              <button class="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">Watches</button>
+              <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
+            </div>
+          </div>
+  
+          <div class="relative group justify-center items-center h-full w-full hidden lg:flex">
+            <img class="object-center object-cover h-full w-full" src="https://i.ibb.co/PTtRBLL/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-1.png" alt="girl-image" />
+            <button class="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">Accessories</button>
+            <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
+          </div>
+          <div class="relative group flex justify-center items-center h-full w-full mt-4 md:hidden md:mt-8 lg:hidden">
+            <img class="object-center object-cover h-full w-full hidden md:block" src="https://i.ibb.co/6FjW19n/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2.png" alt="girl-image" />
+            <img class="object-center object-cover h-full w-full md:hidden" src="https://i.ibb.co/sQgHwHn/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-1.png" alt="olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2" />
+            <button class="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">Accessories</button>
+            <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
+          </div>
+        </div>
+        <div class="relative group hidden md:flex justify-center items-center h-full w-full mt-4 md:mt-8 lg:hidden">
+          <img class="object-center object-cover h-full w-full hidden md:block" src="https://i.ibb.co/6FjW19n/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2.png" alt="girl-image" />
+          <img class="object-center object-cover h-full w-full sm:hidden" src="https://i.ibb.co/sQgHwHn/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-1.png" alt="olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2" />
+          <button class="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">Accessories</button>
+          <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner -->
+
+  <section class="px-4" style="font-family: 'Poppins', sans-serif; font-optical-sizing: auto;">
+    <div
+        class="bg-gradient-to-br from-sky-400 via-sky-400 to-violet-400 p-6 sm:p-10 rounded-2xl w-full text-white flex items-center justify-between mt-20">
+        <div class="flex flex-col gap-6">
+            <div class="">
+                <span class="text-gray-200">Black friday sale</span>
+                <br>
+                <span class="text-gray-200 text-4xl text-white font-semibold">20% off every Product</span>
+            </div>
+            <a href="{% url 'products' %}" rel="noreferrer"
+                class="text-black bg-white hover:bg-gray-50 px-4 py-2 rounded-lg w-fit  ease duration-300 flex gap-1 items-center group">
+                <span>Buy now</span>
+                <svg data-v-e660a7a7="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img"
+                    class="group-hover:translate-x-1 transition-transform ease duration-200" width="1em" height="1em"
+                    viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                        d="m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32Z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-gray-100" viewBox="0 0 15 15">
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="M4.5 0A2.5 2.5 0 0 0 2 2.5v.286c0 .448.133.865.362 1.214H1.5A1.5 1.5 0 0 0 0 5.5v1A1.5 1.5 0 0 0 1.5 8H7V4h1v4h5.5A1.5 1.5 0 0 0 15 6.5v-1A1.5 1.5 0 0 0 13.5 4h-.862c.229-.349.362-.766.362-1.214V2.5A2.5 2.5 0 0 0 10.5 0c-1.273 0-2.388.68-3 1.696A3.498 3.498 0 0 0 4.5 0ZM8 4h2.786C11.456 4 12 3.456 12 2.786V2.5A1.5 1.5 0 0 0 10.5 1A2.5 2.5 0 0 0 8 3.5V4ZM7 4H4.214C3.544 4 3 3.456 3 2.786V2.5A1.5 1.5 0 0 1 4.5 1A2.5 2.5 0 0 1 7 3.5V4Z"
+                    clip-rule="evenodd"></path>
+                <path fill="currentColor" d="M7 9H1v3.5A2.5 2.5 0 0 0 3.5 15H7V9Zm1 6h3.5a2.5 2.5 0 0 0 2.5-2.5V9H8v6Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+</section>
+
+   <!-- Team -->
+   <div class="font-[sans-serif] text-[#333] mt-12" style="font-family: 'Poppins', sans-serif; font-optical-sizing: auto;">
+    <div class="max-w-4xl mx-auto">
+      <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-3xl font-extrabold">Meet our team</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-x-8 gap-y-10 max-md:justify-center mt-12">
+        <div class="bg-gray-800 p-4 border rounded-md max-w-[300px]">
+          <img src="https://i.postimg.cc/MHcF3nYC/about-img.webp" class="w-full object-contain object-top rounded-md" />
+          <div class="text-center mt-4">
+            <h4 class="text-base font-extrabold text-white">Web Developer</h4>
+            <p class="text-lg mt-1 text-white">Yeakin Iqra</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 p-4 border rounded-md max-w-[300px]">
+          <img src="https://i.postimg.cc/SsZK7vZZ/428698293_2790735334411473_8086951660986679295_n.jpg" class="w-full object-contain object-top rounded-md" />
+          <div class="text-center mt-4">
+            <h4 class="text-base font-extrabold text-white">Web Developer</h4>
+            <p class="text-lg mt-1 text-white">Nayeem Islam</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 p-4 border rounded-md max-w-[300px]">
+          <img src="https://i.postimg.cc/c1phNxMB/personal.jpg" class="w-full object-contain object-top rounded-md" />
+          <div class="text-center mt-4">
+            <h4 class="text-base font-extrabold text-white">Web Designer</h4>
+            <p class="text-lg mt-1 text-white">Maruf Ahammed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- FAQ -->
+
+   <div class="mx-auto max-w-lg mt-24" style="font-family: 'Poppins', sans-serif; font-optical-sizing: auto;">
+    <h2 class="text-center font-semibold text-2xl mb-4">Frequently Asked Questions?</h2>
+    <div class="divide-y divide-gray-100">
+        <details class="group" open>
+            <summary
+                class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium text-secondary-900 group-open:text-primary-500">
+                How can I order products?
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="block h-5 w-5 group-open:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="hidden h-5 w-5 group-open:block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                    </svg>
+                </div>
+            </summary>
+            <div class="pb-4 text-secondary-500">
+                You can order products by clicking on the "Shop Now" button and then proceed to checkout.
+            </div>
+        </details>
+        <details class="group">
+            <summary
+                class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium text-secondary-900 group-open:text-primary-500">
+               Is it properly secured?
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="block h-5 w-5 group-open:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="hidden h-5 w-5 group-open:block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                    </svg>
+                </div>
+            </summary>
+            <div class="pb-4 text-secondary-500">
+                Yes, it is properly secured. We use the latest technology to secure your data.We use blockchain technology to secure your data.
+            </div>
+        </details>
+        <details class="group">
+            <summary
+                class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium text-secondary-900 group-open:text-primary-500">
+                BlockChain Based Product Authentication is real?
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="block h-5 w-5 group-open:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="hidden h-5 w-5 group-open:block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                    </svg>
+                </div>
+            </summary>
+            <div class="pb-4 text-secondary-500">
+                Yes, it is real. We use blockchain technology to secure your data.Here all the products have a unique blockchain id.
+                All the supply chain data is stored in the blockchain.You can easily check the product authenticity by scanning the QR code.
+            </div>
+        </details>
+    </div>
+</div>
+     
+      <!-- Contact Us -->
+      <div class="font-[sans-serif] max-w-6xl mt-12 mx-auto" style="font-family: 'Poppins', sans-serif; font-optical-sizing: auto;">
+        <div class="bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] my-6 p-8">
+        <h2 class="text-2xl text-[#333] font-extrabold text-center mb-12">Contact Us</h2>
+        <div class="grid lg:grid-cols-2 items-start gap-16">
+                <form>
+                    <div class="space-y-4">
+                        <input type='text' placeholder='Name'
+                            class="w-full bg-gray-100 rounded py-3 px-6 text-sm focus:outline-blue-600" />
+                        <input type='email' placeholder='Email'
+                            class="w-full bg-gray-100 rounded py-3 px-6 text-sm focus:outline-blue-600" />
+                        <input type='email' placeholder='Phone No.'
+                            class="w-full bg-gray-100 rounded py-3 px-6 text-sm focus:outline-blue-600" />
+                        <textarea placeholder='Message' rows="6"
+                            class="w-full bg-gray-100 rounded px-6 text-sm pt-3 focus:outline-blue-600"></textarea>
+                        <button type='button'
+                            class="text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded text-sm px-6 py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='currentColor' class="mr-2 inline" viewBox="0 0 548.244 548.244">
+                                <path fill-rule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clip-rule="evenodd" data-original="#000000" />
+                            </svg>
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <div class="grid sm:grid-cols-2  gap-16">
+                    <div class="flex items-start bg-white">
+                        <div class="shadow-[0_0px_2px_0px_rgba(6,81,237,0.3)] rounded p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-blue-600" viewBox="0 0 512 512">
+                                <path d="M341.476 338.285c54.483-85.493 47.634-74.827 49.204-77.056C410.516 233.251 421 200.322 421 166 421 74.98 347.139 0 256 0 165.158 0 91 74.832 91 166c0 34.3 10.704 68.091 31.19 96.446l48.332 75.84C118.847 346.227 31 369.892 31 422c0 18.995 12.398 46.065 71.462 67.159C143.704 503.888 198.231 512 256 512c108.025 0 225-30.472 225-90 0-52.117-87.744-75.757-139.524-83.715zm-194.227-92.34a15.57 15.57 0 0 0-.517-.758C129.685 221.735 121 193.941 121 166c0-75.018 60.406-136 135-136 74.439 0 135 61.009 135 136 0 27.986-8.521 54.837-24.646 77.671-1.445 1.906 6.094-9.806-110.354 172.918L147.249 245.945zM256 482c-117.994 0-195-34.683-195-60 0-17.016 39.568-44.995 127.248-55.901l55.102 86.463a14.998 14.998 0 0 0 25.298 0l55.101-86.463C411.431 377.005 451 404.984 451 422c0 25.102-76.313 60-195 60z" data-original="#000000"></path>
+                                <path d="M256 91c-41.355 0-75 33.645-75 75s33.645 75 75 75 75-33.645 75-75-33.645-75-75-75zm0 120c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z" data-original="#000000"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-6">
+                            <h4 class="text-[#333] text-base font-extrabold">Visit office</h4>
+                            <p class="text-sm tect-gray-400 mt-2">RH Home Center, Green Road,Farmgate</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white">
+                        <div class="shadow-[0_0px_2px_0px_rgba(6,81,237,0.3)] rounded p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-blue-600" viewBox="0 0 473.806 473.806">
+                                <path d="M374.456 293.506c-9.7-10.1-21.4-15.5-33.8-15.5-12.3 0-24.1 5.3-34.2 15.4l-31.6 31.5c-2.6-1.4-5.2-2.7-7.7-4-3.6-1.8-7-3.5-9.9-5.3-29.6-18.8-56.5-43.3-82.3-75-12.5-15.8-20.9-29.1-27-42.6 8.2-7.5 15.8-15.3 23.2-22.8 2.8-2.8 5.6-5.7 8.4-8.5 21-21 21-48.2 0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5-6-6.2-12.3-12.6-18.8-18.6-9.7-9.6-21.3-14.7-33.5-14.7s-24 5.1-34 14.7l-.2.2-34 34.3c-12.8 12.8-20.1 28.4-21.7 46.5-2.4 29.2 6.2 56.4 12.8 74.2 16.2 43.7 40.4 84.2 76.5 127.6 43.8 52.3 96.5 93.6 156.7 122.7 23 10.9 53.7 23.8 88 26 2.1.1 4.3.2 6.3.2 23.1 0 42.5-8.3 57.7-24.8.1-.2.3-.3.4-.5 5.2-6.3 11.2-12 17.5-18.1 4.3-4.1 8.7-8.4 13-12.9 9.9-10.3 15.1-22.3 15.1-34.6 0-12.4-5.3-24.3-15.4-34.3l-54.9-55.1zm35.8 105.3c-.1 0-.1.1 0 0-3.9 4.2-7.9 8-12.2 12.2-6.5 6.2-13.1 12.7-19.3 20-10.1 10.8-22 15.9-37.6 15.9-1.5 0-3.1 0-4.6-.1-29.7-1.9-57.3-13.5-78-23.4-56.6-27.4-106.3-66.3-147.6-115.6-34.1-41.1-56.9-79.1-72-119.9-9.3-24.9-12.7-44.3-11.2-62.6 1-11.7 5.5-21.4 13.8-29.7l34.1-34.1c4.9-4.6 10.1-7.1 15.2-7.1 6.3 0 11.4 3.8 14.6 7l.3.3c6.1 5.7 11.9 11.6 18 17.9 3.1 3.2 6.3 6.4 9.5 9.7l27.3 27.3c10.6 10.6 10.6 20.4 0 31-2.9 2.9-5.7 5.8-8.6 8.6-8.4 8.6-16.4 16.6-25.1 24.4-.2.2-.4.3-.5.5-8.6 8.6-7 17-5.2 22.7l.3.9c7.1 17.2 17.1 33.4 32.3 52.7l.1.1c27.6 34 56.7 60.5 88.8 80.8 4.1 2.6 8.3 4.7 12.3 6.7 3.6 1.8 7 3.5 9.9 5.3.4.2.8.5 1.2.7 3.4 1.7 6.6 2.5 9.9 2.5 8.3 0 13.5-5.2 15.2-6.9l34.2-34.2c3.4-3.4 8.8-7.5 15.1-7.5 6.2 0 11.3 3.9 14.4 7.3l.2.2 55.1 55.1c10.3 10.2 10.3 20.7.1 31.3zm-154.2-286.1c26.2 4.4 50 16.8 69 35.8s31.3 42.8 35.8 69c1.1 6.6 6.8 11.2 13.3 11.2.8 0 1.5-.1 2.3-.2 7.4-1.2 12.3-8.2 11.1-15.6-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3 3.7-15.6 11s3.5 14.4 10.9 15.6zm217.2 96.3c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2 3.7-15.5 11-1.2 7.4 3.7 14.3 11.1 15.6 46.6 7.9 89.1 30 122.9 63.7 33.8 33.8 55.8 76.3 63.7 122.9 1.1 6.6 6.8 11.2 13.3 11.2.8 0 1.5-.1 2.3-.2 7.3-1.1 12.3-8.1 11-15.4z" data-original="#000000"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-6">
+                            <h4 class="text-[#333] text-base font-extrabold">Call us</h4>
+                            <p class="text-sm tect-gray-400 mt-2"> +158 996 888</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white">
+                        <div class="shadow-[0_0px_2px_0px_rgba(6,81,237,0.3)] rounded p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-blue-600" viewBox="0 0 32 32">
+                                <path d="M8 30a1.001 1.001 0 0 1-1-1v-5H4c-1.654 0-3-1.346-3-3V5c0-1.654 1.346-3 3-3h24c1.654 0 3 1.346 3 3v16c0 1.654-1.346 3-3 3H15.851l-7.226 5.781A.998.998 0 0 1 8 30zM4 4c-.552 0-1 .449-1 1v16c0 .551.448 1 1 1h4a1 1 0 0 1 1 1v3.92l5.875-4.701A1 1 0 0 1 15.5 22H28c.552 0 1-.449 1-1V5c0-.551-.448-1-1-1z" data-original="#000000"></path>
+                                <path d="M24 12H8a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2zm-8 4H8a1 1 0 1 1 0-2h8a1 1 0 1 1 0 2z" data-original="#000000"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-6">
+                            <h4 class="text-[#333] text-base font-extrabold">Chat to us</h4>
+                            <p class="text-sm tect-gray-400 mt-2">ebazar@help.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white">
+                        <div class="shadow-[0_0px_2px_0px_rgba(6,81,237,0.3)] rounded p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-blue-600" viewBox="0 0 100 100">
+                                <path d="M83 23h-3V11c0-3.309-2.692-6-6-6H26c-3.308 0-6 2.691-6 6v12h-3C8.729 23 2 29.729 2 38v30c0 4.963 4.037 9 9 9h9v12c0 3.309 2.692 6 6 6h48c3.308 0 6-2.691 6-6V77h9c4.963 0 9-4.037 9-9V38c0-8.271-6.729-15-15-15zM26 11h48v12H26zm0 78V59h48v30zm66-21c0 1.654-1.345 3-3 3h-9V59h3a3 3 0 1 0 0-6H17a3 3 0 1 0 0 6h3v12h-9c-1.655 0-3-1.346-3-3V38c0-4.963 4.037-9 9-9h66c4.963 0 9 4.037 9 9zm-27 0a3 3 0 0 1-3 3H38a3 3 0 1 1 0-6h24a3 3 0 0 1 3 3zm0 12a3 3 0 0 1-3 3H38a3 3 0 1 1 0-6h24a3 3 0 0 1 3 3zm21-42a3 3 0 0 1-3 3h-6a3 3 0 1 1 0-6h6a3 3 0 0 1 3 3z" data-original="#000000"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-6">
+                            <h4 class="text-[#333] text-base font-extrabold">Fax</h4>
+                            <p class="text-sm tect-gray-400 mt-2">+1-548-2588</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-8 px-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="lg:flex lg:items-center">
+            <a href="/">
+              <img src="https://i.postimg.cc/43P04TBp/ebazar.png" alt="logo" class="w-48" />
+            </a>
+          </div>
+          <div class="lg:flex lg:items-center">
+            <ul class="flex space-x-6">
+              <li>
+                <a href="javascript:void(0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="fill-gray-300 hover:fill-white w-7 h-7" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7v-7h-2v-3h2V8.5A3.5 3.5 0 0 1 15.5 5H18v3h-2a1 1 0 0 0-1 1v2h3v3h-3v7h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="fill-gray-300 hover:fill-white w-7 h-7" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M21 5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5zm-2.5 8.2v5.3h-2.79v-4.93a1.4 1.4 0 0 0-1.4-1.4c-.77 0-1.39.63-1.39 1.4v4.93h-2.79v-8.37h2.79v1.11c.48-.78 1.47-1.3 2.32-1.3 1.8 0 3.26 1.46 3.26 3.26zM6.88 8.56a1.686 1.686 0 0 0 0-3.37 1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 1.57v8.37H5.5v-8.37h2.77z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="fill-gray-300 hover:fill-white w-7 h-7"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M22.92 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.83 4.5 17.72 4 16.46 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.9 20.29 6.16 21 8.58 21c7.88 0 12.21-6.54 12.21-12.21 0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-black">Contact Us</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="javascript:void(0)" class="text-gray-900 hover:text-gray-700 text-sm">Email</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="text-gray-900 hover:text-gray-700 text-sm">Phone</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="text-gray-900 hover:text-gray-700 text-sm">Address</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-black">Information</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="javascript:void(0)" class="text-gray-900 hover:text-gray-700 text-sm">About Us</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="text-gray-900 hover:text-gray-700 text-sm">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="text-gray-900 hover:text-gray-700 text-sm">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class='text-gray-800 text-sm mt-8 text-center'>© 2024<a href='/' target='_blank'
+          class="hover:underline mx-1">E-BAZAR</a>All Rights Reserved.
+        </p>
+      </footer>
+
+    {% endblock %}
+</body>
+</html>
