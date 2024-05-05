@@ -1,7 +1,7 @@
-<h1>E-Bazaar -Authentic Product Selling Website</h1>
+<h1>E-Bazaar -Authentic Product Selling Website 🛒</h1>
 <p>Welcome to E-Bazaar, your authentic destination for buying products hassle-free! With all the essential e-commerce features, E-Bazaar ensures a seamless shopping experience for users.</p>
 
-<h2>Features</h2>
+<h2>Features 🚧</h2>
 <ul>
     <li>Product Explore: Browse through a wide range of products.</li>
     <li>Product Details: View detailed information about each product, including anti-counterfeit code, serial number, supplier, and supply chain details.</li>
@@ -13,7 +13,7 @@
     <li>Stock Management: Automatic stock updates after purchase to ensure accurate availability.</li>
 </ul>
 
-<h2>Made With</h2>
+<h2>Made With 💻</h2>
 <p>
     <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"> 
     <img src="https://img.icons8.com/color/48/000000/django.png" alt="Django"> 
@@ -21,7 +21,7 @@
     <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5"> 
 </p>
 
-<h2>Installation</h2>
+<h2>Installation ⚙️</h2>
 <ol>
     <li>Clone the repository:</li>
 </ol>
@@ -57,7 +57,7 @@
     <li>Access the website at <code>http://localhost:8000</code> in your browser.</li>
 </ol>
 
-<h2>Screenshots</h2>
+<h2>Screenshots 📸 </h2>
 
 <h3>Homepage</h3>
 <img src="placeholder/homepage.png" alt="Homepage">
