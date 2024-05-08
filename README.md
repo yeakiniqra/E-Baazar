@@ -13,6 +13,8 @@
     <li>Stock Management: Automatic stock updates after purchase to ensure accurate availability.</li>
 </ul>
 
+<h3>Live: https://yeakiniqra.pythonanywhere.com/</h3>
+
 <h2>Made With 💻</h2>
 <p>
     <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"> 
